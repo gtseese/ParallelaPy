@@ -128,7 +128,7 @@ def square_cube_it(number):
 
 square_cube = RunParallel(function=square_cube_it, iterable=i)
 
-# No need to assign the output, as the square cube object itself will contain the data
+# No need to assign the output, as the square_cube object itself will contain the data
 square_cube.execute()
 
 print(square_cube.all_pass_ids())
