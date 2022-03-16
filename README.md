@@ -39,7 +39,7 @@ for t in f.failed_tasks:
 >> square_it : a : unsupported operand type(s) for ** or pow(): 'str' and 'int'
 ```
 
-By default, only functions that raised Exceptions or otherwise failed to complete are considered failed. The user may specify that any function that returns `False` should also be considered a failure
+By default, only functions that raised Exceptions or otherwise failed to complete are considered `failed_tasks`. The user may specify that any function that returns `False` should also be considered a failure by adding `fail_on_false=True` as an input to `x.execute`.
 
 ```python
 def is_even(number):
